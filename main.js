@@ -2,8 +2,8 @@
     'use strict';
     //const CURRENT_VERSION = "X-VERSE";
 
-    const GITHUB_USER = "taka-4602";
-    const GITHUB_REPO = "chunithm-best-generator";
+    const GITHUB_USER = "j105588";
+    const GITHUB_REPO = "chunithm";
     const CONST_DATA_URL = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/main/chunithm.json`;
 
     const BASE_URL = "https://new.chunithm-net.com/chuni-mobile/html/mobile/";
@@ -791,8 +791,8 @@
         const secondLineY = canvas.height - PADDING + 10;
         const firstLineY = secondLineY - lineHeight;
 
-        ctx.fillText('非公式ジェネレーターによって生成されました', footerX, firstLineY);
-        ctx.fillText('https://chunithm.fun', footerX, secondLineY);
+        ctx.fillText('', footerX, firstLineY);
+        ctx.fillText('', footerX, secondLineY);
 
         // --- 結果表示 ---
         updateMessage("画像を生成中...");
@@ -980,4 +980,5 @@
         }
         showError(error.message);
     }
+
 })();
